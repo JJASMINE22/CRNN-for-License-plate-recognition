@@ -28,51 +28,51 @@
 5. onnx通用部署模型转换位于./onnx目录下
 
 ## 网络结构
-CRNN based on MultiHeadAttention
-----------------------------------------------------------------
-        Layer (type)               Output Shape         Param #
-================================================================
-            Conv2d-1          [-1, 64, 32, 100]           1,792
-         MaxPool2d-2           [-1, 64, 16, 50]               0
-            Conv2d-3          [-1, 128, 16, 50]          73,856
-         MaxPool2d-4           [-1, 128, 8, 25]               0
-            Conv2d-5           [-1, 256, 8, 25]         295,168
-         LayerNorm-6           [-1, 256, 8, 25]         102,400
-            Conv2d-7           [-1, 256, 8, 25]         590,080
-         MaxPool2d-8           [-1, 256, 5, 24]               0
-            Conv2d-9           [-1, 512, 5, 24]       1,180,160
-        LayerNorm-10           [-1, 512, 5, 24]         122,880
-           Conv2d-11           [-1, 512, 5, 24]       2,359,808
-        MaxPool2d-12           [-1, 512, 3, 23]               0
-           Conv2d-13           [-1, 512, 1, 21]       2,359,808
-        LayerNorm-14           [-1, 512, 1, 21]          21,504
-           Linear-15              [-1, 21, 512]         262,656
-           Linear-16              [-1, 21, 512]         262,656
-           Linear-17              [-1, 21, 512]         262,656
-           Linear-18              [-1, 21, 512]         262,656
-        LayerNorm-19              [-1, 21, 512]           1,024
-MultiHeadAttention-20  [[-1, 21, 512], [-1, 21, 21]]               0
-           Linear-21              [-1, 21, 512]         262,656
-           Linear-22              [-1, 21, 512]         262,656
-           Linear-23              [-1, 21, 512]         262,656
-           Linear-24              [-1, 21, 512]         262,656
-        LayerNorm-25              [-1, 21, 512]           1,024
-MultiHeadAttention-26  [[-1, 21, 512], [-1, 21, 21]]               0
-           Linear-27               [-1, 21, 66]          33,858
-================================================================
-Total params: 9,244,610
-Trainable params: 9,244,610
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.04
-Forward/backward pass size (MB): 65.34
-Params size (MB): 35.27
-Estimated Total Size (MB): 100.65
+CRNN based on MultiHeadAttention  
+----------------------------------------------------------------  
+        Layer (type)               Output Shape         Param #  
+================================================================  
+            Conv2d-1          [-1, 64, 32, 100]           1,792  
+         MaxPool2d-2           [-1, 64, 16, 50]               0  
+            Conv2d-3          [-1, 128, 16, 50]          73,856  
+         MaxPool2d-4           [-1, 128, 8, 25]               0  
+            Conv2d-5           [-1, 256, 8, 25]         295,168  
+         LayerNorm-6           [-1, 256, 8, 25]         102,400  
+            Conv2d-7           [-1, 256, 8, 25]         590,080  
+         MaxPool2d-8           [-1, 256, 5, 24]               0  
+            Conv2d-9           [-1, 512, 5, 24]       1,180,160  
+        LayerNorm-10           [-1, 512, 5, 24]         122,880  
+           Conv2d-11           [-1, 512, 5, 24]       2,359,808  
+        MaxPool2d-12           [-1, 512, 3, 23]               0  
+           Conv2d-13           [-1, 512, 1, 21]       2,359,808  
+        LayerNorm-14           [-1, 512, 1, 21]          21,504  
+           Linear-15              [-1, 21, 512]         262,656  
+           Linear-16              [-1, 21, 512]         262,656  
+           Linear-17              [-1, 21, 512]         262,656  
+           Linear-18              [-1, 21, 512]         262,656  
+        LayerNorm-19              [-1, 21, 512]           1,024  
+MultiHeadAttention-20  [[-1, 21, 512], [-1, 21, 21]]               0  
+           Linear-21              [-1, 21, 512]         262,656  
+           Linear-22              [-1, 21, 512]         262,656  
+           Linear-23              [-1, 21, 512]         262,656  
+           Linear-24              [-1, 21, 512]         262,656  
+        LayerNorm-25              [-1, 21, 512]           1,024  
+MultiHeadAttention-26  [[-1, 21, 512], [-1, 21, 21]]               0  
+           Linear-27               [-1, 21, 66]          33,858  
+================================================================  
+Total params: 9,244,610  
+Trainable params: 9,244,610  
+Non-trainable params: 0  
+----------------------------------------------------------------  
+Input size (MB): 0.04  
+Forward/backward pass size (MB): 65.34  
+Params size (MB): 35.27  
+Estimated Total Size (MB): 100.65  
 
-## 效果展示
-![image]()
-![image]()
-![image]()
+## 效果展示  
+![image](https://github.com/JJASMINE22/CRNN-for-License-plate-recognition/tree/master/sample/sample1.jpg)  
+![image](https://github.com/JJASMINE22/CRNN-for-License-plate-recognition/tree/master/sample/sample2.jpg)   
+![image](https://github.com/JJASMINE22/CRNN-for-License-plate-recognition/tree/master/sample/sample3.jpg)
 
 ## 数据下载    
 CCPD2019 
