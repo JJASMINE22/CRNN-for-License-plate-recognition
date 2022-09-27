@@ -70,9 +70,9 @@ Params size (MB): 35.27
 Estimated Total Size (MB): 100.65  
 
 ## 效果展示  
-![image](https://github.com/JJASMINE22/CRNN-for-License-plate-recognition/tree/master/sample/sample1.jpg)  
-![image](https://github.com/JJASMINE22/CRNN-for-License-plate-recognition/tree/master/sample/sample2.jpg)   
-![image](https://github.com/JJASMINE22/CRNN-for-License-plate-recognition/tree/master/sample/sample3.jpg)
+![image](https://github.com/JJASMINE22/CRNN-for-License-plate-recognition/blob/master/sample/sample1.jpg)  
+![image](https://github.com/JJASMINE22/CRNN-for-License-plate-recognition/blob/master/sample/sample2.jpg)   
+![image](https://github.com/JJASMINE22/CRNN-for-License-plate-recognition/blob/master/sample/sample3.jpg)
 
 ## 数据下载    
 CCPD2019 
